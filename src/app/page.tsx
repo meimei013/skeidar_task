@@ -16,11 +16,11 @@ import {
 import clsx from "clsx";
 export default function Page() {
   return (
-    <main className="pt-[100px]">
+    <main className="pt-[120px] xl:p-[100px]">
       <div className="w-full md:block hidden">
         <NavMenu />
       </div>
-      <div className="space-y-4 xl:space-y-6">
+      <div className="space-y-2 xl:space-y-6">
         <HeroBanner
           data={banner1[0]}
           imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat bg-center bg-cover"
@@ -48,7 +48,7 @@ export default function Page() {
         <CarouselSection
           sliderData={sliderData}
           title=""
-          imgClass="h-[75px] w-[75px] xl:h-[140px]  xl:w-[140px] bg-gray-300 hover:bg-gray-200 object-contain rounded-full img-hover-magnify"
+          imgClass="h-[75px] w-[75px] xl:h-[200px]  xl:w-[200px] bg-gray-300 hover:bg-gray-200 object-contain rounded-full img-hover-magnify"
         />
         <HeroBanner
           data={banner2[0]}

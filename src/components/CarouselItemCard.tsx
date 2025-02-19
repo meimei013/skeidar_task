@@ -25,8 +25,8 @@ const CarouselItemCard = ({
     <div>
       <Image
         src={img}
-        width={150}
-        height={150}
+        width={200}
+        height={200}
         alt={alt}
         className={imageStyle}
       />

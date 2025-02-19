@@ -4,7 +4,7 @@ const Review = () => {
   return (
     <section className="w-full flex items-center justify-center gap-6 px-4">
       <div className="text-center relative">
-        <div>⭐ ⭐ ⭐ ⭐ ⭐ </div>
+        <div className="text-sm">⭐ ⭐ ⭐ ⭐ ⭐ </div>
         <div className="text-lg font-semibold">
           4.2 <span className="text-xs">/5</span>
         </div>

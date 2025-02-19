@@ -4,7 +4,7 @@ import { modeOfPayments, pointers } from "@/utils/constant";
 
 const Footer = () => {
   return (
-    <div className="relative p-4 mt-8 bg-gray-100 border-t border-gray-300">
+    <div className="relative p-4 mt-4 xl:mt-8 bg-gray-100 border-t border-gray-300">
       <div className="w-full xl:space-x-12 space-x-2 flex items-center justify-center">
         {pointers.map((item) => (
           <div key={item.id} className="space-y-3">

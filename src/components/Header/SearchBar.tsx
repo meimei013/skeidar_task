@@ -10,7 +10,7 @@ const SearchBar = () => {
         placeholder="Search..."
       />
       <svg
-        className="w-4 h-4 text-gray-500 mr-2"
+        className="w-4 h-4 fill-white text-gray-500 mr-2"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
