@@ -9,7 +9,7 @@ import SearchBar from "./SearchBar";
 const Header = () => {
   const pathname = usePathname();
   return (
-    <div className="w-full h-[100px] bg-white fixed z-10 border-b border-gray-300">
+    <div className="w-full h-[80px] xl:h-[100px] bg-white fixed z-10 border-b border-gray-300">
       <div className="bg-red-600 relative xl:text-base text-xs text-center font-thin tracking-wide text-white p-2 uppercase">
         Campaign Message line with movement
       </div>

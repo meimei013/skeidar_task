@@ -20,7 +20,7 @@ export default function Page() {
       <div className="w-full md:block hidden">
         <NavMenu />
       </div>
-      <div className="space-y-6">
+      <div className="space-y-4 xl:space-y-6">
         <HeroBanner
           data={banner1[0]}
           imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat bg-center bg-cover"
@@ -48,7 +48,7 @@ export default function Page() {
         <CarouselSection
           sliderData={sliderData}
           title=""
-          imgClass="h-[75px] w-[75px] xl:h-[140px]  xl:w-[140px] bg-gray-300 object-contain rounded-full"
+          imgClass="h-[75px] w-[75px] xl:h-[140px]  xl:w-[140px] bg-gray-300 hover:bg-gray-200 object-contain rounded-full img-hover-magnify"
         />
         <HeroBanner
           data={banner2[0]}
@@ -57,7 +57,7 @@ export default function Page() {
         <CarouselSection
           sliderData={sliderData2}
           title="Carousel with SKU-products"
-          imgClass="h-[75px] xl:h-[100px] object-contain"
+          imgClass="h-[75px] xl:h-[100px] object-contain img-hover-magnify"
         />
         <section className="w-full grid place-items-center mx-auto">
           <div
