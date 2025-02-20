@@ -45,7 +45,7 @@ export default function Page() {
           title=""
           imgClass="carouse-circle bg-orange-50 hover:bg-orange-100 object-contain img-hover-magnify"
         />
-        <HeroBanner data={banner[0]} imgClass="hero-banner" />
+        <HeroBanner data={banner[1]} imgClass="hero-banner" />
         <CarouselSection
           sliderData={sliderData2}
           title="Carousel with SKU-products"
