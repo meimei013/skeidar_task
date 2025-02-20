@@ -5,8 +5,7 @@ import HeroBanner from "@/components/HeroBanner";
 import ImageCard from "@/components/ImageCard";
 import Review from "@/components/Review";
 import {
-  banner1,
-  banner2,
+  banner,
   imageItems,
   imageItems2,
   sliderData,
@@ -20,7 +19,7 @@ export default function Page() {
         <NavMenu />
       </div>
       <div className="space-y-2 xl:space-y-6">
-        <HeroBanner data={banner1[0]} imgClass="hero-banner" />
+        <HeroBanner data={banner[0]} imgClass="hero-banner" />
         <section className="section-grid p-4">
           <div
             className={clsx(
@@ -46,7 +45,7 @@ export default function Page() {
           title=""
           imgClass="carouse-circle bg-orange-50 hover:bg-orange-100 object-contain img-hover-magnify"
         />
-        <HeroBanner data={banner2[0]} imgClass="hero-banner" />
+        <HeroBanner data={banner[0]} imgClass="hero-banner" />
         <CarouselSection
           sliderData={sliderData2}
           title="Carousel with SKU-products"

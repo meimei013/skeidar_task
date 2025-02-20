@@ -92,8 +92,10 @@ export const pointers = [
   },
 ];
 
-export const banner1 = [{ id: "1", img: "/banner-one.jpg", alt: "hero-image" }];
-export const banner2 = [{ id: "1", img: "/banner-two.jpg", alt: "hero-image" }];
+export const banner = [
+  { id: "1", img: "/banner-one.jpg", alt: "hero-image" },
+  { id: "1", img: "/banner-two.jpg", alt: "hero-image" },
+];
 export const sliderData2 = [
   {
     id: "1",
