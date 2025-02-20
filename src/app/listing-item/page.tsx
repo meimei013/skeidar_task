@@ -7,7 +7,7 @@ import Marquee from "@/components/Marquee";
 
 export default function ListingItem() {
   return (
-    <main className="main-div-layout xl:pt-[100px] xl:mb-[30px]">
+    <main className="main-div-layout xl:pt-[100px]">
       <div className="text-gray-400 py-4 xl:py-8 px-4">
         Home | All Products | <span className="text-gray-800">Sofa</span>
       </div>
@@ -38,12 +38,12 @@ export default function ListingItem() {
               status={item.status}
               discounted={item.discounted}
               link={item.link}
-              imageClass={""}
+              imageClass={"img-hover-magnify"}
             />
           ))}
         </div>
       </section>
-      <Marquee message={"Sales end at 23:04:22"} />
+      <Marquee message={"Sales end at 23:04:22"} bgColor="bg-red-500" />
     </main>
   );
 }

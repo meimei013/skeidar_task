@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { modeOfPayments, pointers } from "@/utils/constant";
 import PaymentMode from "./_components/PaymentMode";
 import PointersComp from "./_components/PointersComp";
 

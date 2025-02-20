@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import BadgeColor from "@/app/listing-item/_components/BadgeColor";
+import BadgeColor from "./BadgeColor";
 
 interface ProductImage {
   id: string;
@@ -48,7 +48,7 @@ const ProductCard = ({
         {sale.map((item, i) => (
           <div
             key={i}
-            className="uppercase bg-orange-600 text-white px-3 py-1 text-xs xl:text-sm"
+            className="uppercase bg-orange-400 text-white px-3 py-1 text-xs xl:text-sm"
           >
             {item}
           </div>
