@@ -2,11 +2,11 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div className="flex items-center w-full h-[40px] bg-white border-b border-b-gray-300">
+    <div className="flex items-center w-full h-[40px] bg-white xl:bg-orange-50 border-b border-b-gray-300">
       <input
         type="search"
         id="default-search"
-        className="block w-full p-2 pe-10 text-sm bg-white text-gray-900"
+        className="block w-full p-2 pe-10 text-sm bg-white xl:bg-orange-50 text-gray-900"
         placeholder="Search..."
       />
       <svg
