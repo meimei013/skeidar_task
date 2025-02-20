@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { pointers } from "@/utils/constant";
 import { Pointer } from "lucide-react";
 

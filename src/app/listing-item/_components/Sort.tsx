@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { ArrowUpDown } from "lucide-react";
 
 import {
@@ -11,7 +11,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { navItems } from "@/utils/constant";
 
 export const SortComp = () => {
   const sortData = [
@@ -41,15 +40,15 @@ export const SortComp = () => {
           <SheetHeader>
             <SheetTitle />
             <SheetDescription />
-            <div className="text-left">Sort Data</div>
+            <div className="text-left text-gray-600">Sort Data</div>
           </SheetHeader>
           <nav className="flex flex-col gap-3 pt-3 border-t ">
-            {sortData.map(({ id, value, label }) => {
+            {sortData.map(({ id, label }) => {
               return (
                 <SheetClose key={id} asChild>
                   <div className="flex gap-2">
                     <input type="radio" name="sort" value="highToLow" />
-                    <span> {label}</span>
+                    <span className="text-gray-600"> {label}</span>
                   </div>
                 </SheetClose>
               );

@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import { Menu, SlidersHorizontal } from "lucide-react";
+import React from "react";
+import { SlidersHorizontal } from "lucide-react";
 
 import {
   Sheet,
@@ -11,10 +11,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { navItems } from "@/utils/constant";
 
 export const FilterComp = () => {
-  const filterData = ["sofa", "bed", "dining"];
   return (
     <>
       <Sheet>
@@ -25,7 +23,7 @@ export const FilterComp = () => {
           <SheetHeader>
             <SheetTitle />
             <SheetDescription />
-            <div className="text-left">Filter Data</div>
+            <div className="text-left text-gray-600">Filter Data</div>
           </SheetHeader>
           <nav className="flex flex-col gap-3 pt-3 border-t ">
             {["sofa", "bed", "dining"].map((item, i) => {
@@ -33,7 +31,7 @@ export const FilterComp = () => {
                 <SheetClose key={i} asChild>
                   <div className="flex gap-2">
                     <input type="checkbox" name="filter" value="highToLow" />
-                    <span> {item}</span>
+                    <span className="text-gray-600"> {item}</span>
                   </div>
                 </SheetClose>
               );
