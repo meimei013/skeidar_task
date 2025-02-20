@@ -78,4 +78,25 @@ body {
   .filter-sort-layout {
     @apply flex gap-2 rounded bg-gray-200 px-4 py-2;
   }
+  .card-title {
+    @apply text-sm text-gray-700 xl:text-base;
+  }
+  .price-discounted {
+    @apply text-base text-gray-700 xl:text-lg font-semibold;
+  }
+  .price-line-through {
+    @apply text-xs text-gray-400 xl:text-sm line-through;
+  }
+  .card-link {
+    @apply text-xs xl:text-sm text-gray-400 underline block;
+  }
+  .hero-banner {
+    @apply w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat object-right bg-center bg-cover;
+  }
+  .carouse-circle {
+    @apply h-[75px] w-[75px] md:h-[200px] md:w-[200px] rounded-full;
+  }
+  .section-grid {
+    @apply w-full grid place-items-center p-4 mx-auto;
+  }
 }

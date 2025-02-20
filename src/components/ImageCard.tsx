@@ -23,10 +23,8 @@ const ImageCard = ({
       className={imageClass}
     />
     <div className="text-center mt-2">
-      <div className="text-base text-gray-600 xl:text-lg">{title}</div>
-      <span className="text-xs text-gray-400 xl:text-sm underline block">
-        {link}
-      </span>
+      <div className="card-title">{title}</div>
+      <span className="card-link">{link}</span>
     </div>
   </div>
 );

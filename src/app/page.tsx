@@ -20,11 +20,8 @@ export default function Page() {
         <NavMenu />
       </div>
       <div className="space-y-2 xl:space-y-6">
-        <HeroBanner
-          data={banner1[0]}
-          imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat object-right bg-center bg-cover"
-        />
-        <section className="w-full grid place-items-center p-4 mx-auto ">
+        <HeroBanner data={banner1[0]} imgClass="hero-banner" />
+        <section className="section-grid">
           <div
             className={clsx(
               "grid grid-cols-2 gap-4",
@@ -47,18 +44,15 @@ export default function Page() {
         <CarouselSection
           sliderData={sliderData}
           title=""
-          imgClass="h-[75px] w-[75px] md:h-[200px] md:w-[200px] bg-orange-50 hover:bg-orange-100 object-contain rounded-full img-hover-magnify"
+          imgClass="carouse-circle bg-orange-50 hover:bg-orange-100 object-contain img-hover-magnify"
         />
-        <HeroBanner
-          data={banner2[0]}
-          imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat object-right bg-center bg-cover"
-        />
+        <HeroBanner data={banner2[0]} imgClass="hero-banner" />
         <CarouselSection
           sliderData={sliderData2}
           title="Carousel with SKU-products"
           imgClass="h-[75px] md:h-[100px] object-contain img-hover-magnify"
         />
-        <section className="w-full grid place-items-center mx-auto">
+        <section className="section-grid">
           <div
             className={clsx(
               "grid grid-cols-3 gap-4",
@@ -83,16 +77,3 @@ export default function Page() {
     </main>
   );
 }
-
-// import Image from "next/image";
-// import CarouselSize from "./_components/Carousel";
-
-// export default function Home() {
-//   return (
-//     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-//       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-//         <CarouselSize />
-//       </main>
-//     </div>
-//   );
-// }

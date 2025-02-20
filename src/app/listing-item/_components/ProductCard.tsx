@@ -57,22 +57,15 @@ const ProductCard = ({
     </div>
     <div className="text-left mt-2">
       <div className="text-base flex justify-between items-center text-gray-600 xl:text-lg">
-        <div className="xl:text-lg text-base text-gray-700">{name}</div>
+        <div className="card-title">{name}</div>
         <div className="text-sm text-gray-500">{type}</div>
       </div>
       <div className="space-x-2">
-        <span className="text-base text-gray-700 xl:text-lg font-semibold">
-          {discounted}
-        </span>
-        <span className="text-sm line-through text-gray-400 xl:text-base">
-          {price}
-        </span>
+        <span className="price-discounted">{discounted}</span>
+        <span className="price-line-through">{price}</span>
       </div>
       <div className="text-base flex justify-between items-center text-gray-600 xl:text-lg">
-        <Link
-          href={"#"}
-          className="text-xs text-gray-400 xl:text-sm underline block"
-        >
+        <Link href={"#"} className="card-link">
           {link}
         </Link>
         <BadgeColor />

@@ -31,24 +31,15 @@ const CarouselItemCard = ({
         className={imageStyle}
       />
       <div className="text-center mt-2">
-        {title && (
-          <div className="text-base text-gray-600 xl:text-lg">{title}</div>
-        )}
+        {title && <div className="card-title">{title}</div>}
         {price && discounted && (
           <div className="xl:space-x-2">
-            <span className="text-base text-gray-700 xl:text-lg font-semibold">
-              {discounted}
-            </span>{" "}
-            <span className="text-xs xl:text-sm block xl:inline-block line-through text-gray-400">
-              {price}
-            </span>
+            <span className="price-discounted">{discounted}</span>{" "}
+            <span className="price-line-through block">{price}</span>
           </div>
         )}
         {link && (
-          <Link
-            href={link}
-            className="text-xs text-gray-400 xl:text-sm underline block"
-          >
+          <Link href={link} className="card-link">
             {linkLabel}
           </Link>
         )}
