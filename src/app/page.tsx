@@ -21,7 +21,7 @@ export default function Page() {
       </div>
       <div className="space-y-2 xl:space-y-6">
         <HeroBanner data={banner1[0]} imgClass="hero-banner" />
-        <section className="section-grid">
+        <section className="section-grid p-4">
           <div
             className={clsx(
               "grid grid-cols-2 gap-4",

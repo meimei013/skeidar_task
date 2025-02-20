@@ -97,6 +97,6 @@ body {
     @apply h-[75px] w-[75px] md:h-[200px] md:w-[200px] rounded-full;
   }
   .section-grid {
-    @apply w-full grid place-items-center p-4 mx-auto;
+    @apply w-full grid place-items-center mx-auto;
   }
 }
