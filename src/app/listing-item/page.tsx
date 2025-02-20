@@ -1,11 +1,8 @@
-import { FilterComp } from "@/components/Filter";
-import { MobileMenu } from "@/components/Header/MobileMenu";
-import ProductCard from "@/components/ProductCard";
-import { SortComp } from "@/components/Sort";
-
 import { imageItems, products } from "@/utils/constant";
 import clsx from "clsx";
-import { ArrowUpDown, SlidersHorizontal } from "lucide-react";
+import ProductCard from "./_components/ProductCard";
+import { FilterComp } from "./_components/Filter";
+import { SortComp } from "./_components/Sort";
 
 export default function ListingItem() {
   return (

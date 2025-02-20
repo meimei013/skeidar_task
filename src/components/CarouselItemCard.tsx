@@ -39,7 +39,7 @@ const CarouselItemCard = ({
             <span className="text-base text-gray-700 xl:text-lg font-semibold">
               {discounted}
             </span>{" "}
-            <span className="text-sm block xl:inline-block line-through text-gray-400 xl:text-base">
+            <span className="text-xs xl:text-sm block xl:inline-block line-through text-gray-400">
               {price}
             </span>
           </div>

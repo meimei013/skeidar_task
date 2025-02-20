@@ -70,10 +70,10 @@ const ProductCard = ({
       </div>
       <div className="text-base flex justify-between items-center text-gray-600 xl:text-lg">
         <Link
-          href={link}
+          href={"#"}
           className="text-xs text-gray-400 xl:text-sm underline block"
         >
-          {status}
+          {link}
         </Link>
         <BadgeColor />
       </div>

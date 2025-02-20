@@ -22,7 +22,7 @@ const Header = () => {
           <Image
             src={"/logo.png"}
             alt={"logo"}
-            width={"250"}
+            width={"220"}
             height={"100"}
             priority
           />
