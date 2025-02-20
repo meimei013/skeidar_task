@@ -9,7 +9,7 @@ export default function ListingItem() {
   return (
     <main className="main-div-layout xl:pt-[100px]">
       <div className="text-gray-400 py-4 xl:py-8 px-4">
-        Home | All Products | <span className="text-gray-800">Sofa</span>
+        Home | <span className="text-gray-800">All Products</span>
       </div>
       <div className="flex px-4 py-2 justify-between items-center">
         <div className="filter-sort-layout">
