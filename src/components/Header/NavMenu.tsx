@@ -12,10 +12,10 @@ const NavMenu = () => {
               <li key={item.id}>
                 <Link
                   href={item.link}
-                  className="py-2 px-3 text-gray-600 hover:text-gray-800 hover:underline"
+                  className="py-2 px-3 text-gray-600 text-sm xl:text-base hover:text-gray-800 hover:underline"
                   aria-current="page"
                 >
-                  <span> {item.label}</span>
+                  {item.label}
                 </Link>
               </li>
             ))}

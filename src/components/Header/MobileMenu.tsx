@@ -46,7 +46,10 @@ export const MobileMenu = () => {
             {navItems.map(({ label, link }, i) => {
               return (
                 <SheetClose key={i} asChild>
-                  <Link href={link} className="text-base">
+                  <Link
+                    href={link}
+                    className="text-sm text-gray-600 xl:text-base"
+                  >
                     {label}
                   </Link>
                 </SheetClose>
