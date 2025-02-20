@@ -14,7 +14,7 @@ const Header = () => {
   const dynamicBg = pathname === "/" ? "bg-red-500" : "bg-orange-400";
   const orderNo = 3;
   return (
-    <div className="w-full h-[100px] bg-white fixed z-10 border-b border-gray-300">
+    <div className="w-full h-[100px] bg-orange-50 fixed z-10 border-b border-gray-300">
       <Marquee
         message={"campaign message line with movement"}
         bgColor={dynamicBg}
