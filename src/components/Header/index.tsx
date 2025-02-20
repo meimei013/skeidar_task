@@ -25,12 +25,13 @@ const Header = () => {
             width={"220"}
             height={"100"}
             priority
+            className="mt-0 xl:mt-2"
           />
         </Link>
         <div className="w-1/2 xl:block hidden">
           <SearchBar />
         </div>
-        <div className="flex gap-2 items-center justify-center">
+        <div className="flex mt-0 xl:mt-2 gap-2 items-center justify-center">
           <div className="relative">
             <UserRound className="w-6 h-6" />
           </div>
