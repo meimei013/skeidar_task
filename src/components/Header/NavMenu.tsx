@@ -6,8 +6,8 @@ const NavMenu = () => {
   return (
     <nav className="bg-white py-2">
       <div className="flex">
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col px-4 md:p-0 rounded-lg md:flex-row md:space-x-4 rtl:space-x-reverse">
+        <div className="hidden w-full md:block md:w-auto">
+          <ul className="font-medium flex space-x-2">
             {navItems.map((item) => (
               <li key={item.id}>
                 <Link

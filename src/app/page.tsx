@@ -4,7 +4,6 @@ import NavMenu from "@/components/Header/NavMenu";
 import HeroBanner from "@/components/HeroBanner";
 import ImageCard from "@/components/ImageCard";
 import Review from "@/components/Review";
-import Image from "next/image";
 import {
   banner1,
   banner2,
@@ -16,14 +15,14 @@ import {
 import clsx from "clsx";
 export default function Page() {
   return (
-    <main className="pt-[120px] xl:p-[100px]">
+    <main className="pt-[120px] xl:pt-[100px]">
       <div className="w-full md:block hidden">
         <NavMenu />
       </div>
       <div className="space-y-2 xl:space-y-6">
         <HeroBanner
           data={banner1[0]}
-          imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat bg-center bg-cover"
+          imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat object-right bg-center bg-cover"
         />
         <section className="w-full grid place-items-center p-4 mx-auto ">
           <div
@@ -40,7 +39,7 @@ export default function Page() {
                 title={item.title}
                 price={item.price}
                 link={item.link}
-                imageClass={""}
+                imageClass={"img-hover-magnify"}
               />
             ))}
           </div>
@@ -48,16 +47,16 @@ export default function Page() {
         <CarouselSection
           sliderData={sliderData}
           title=""
-          imgClass="h-[75px] w-[75px] xl:h-[200px]  xl:w-[200px] bg-gray-300 hover:bg-gray-200 object-contain rounded-full img-hover-magnify"
+          imgClass="h-[75px] w-[75px] md:h-[200px] md:w-[200px] bg-orange-50 hover:bg-orange-100 object-contain rounded-full img-hover-magnify"
         />
         <HeroBanner
           data={banner2[0]}
-          imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat bg-center bg-cover"
+          imgClass="w-[100vw] h-[30vh] xl:h-[40vh] object-cover bg-no-repeat object-right bg-center bg-cover"
         />
         <CarouselSection
           sliderData={sliderData2}
           title="Carousel with SKU-products"
-          imgClass="h-[75px] xl:h-[100px] object-contain img-hover-magnify"
+          imgClass="h-[75px] md:h-[100px] object-contain img-hover-magnify"
         />
         <section className="w-full grid place-items-center mx-auto">
           <div
@@ -73,7 +72,7 @@ export default function Page() {
                 title={item.title}
                 price={item.price}
                 link={item.link}
-                imageClass={""}
+                imageClass={"img-hover-magnify"}
               />
             ))}
           </div>

@@ -5,6 +5,7 @@ import { UserRound, ShoppingBasket } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { MobileMenu } from "./MobileMenu";
 import SearchBar from "./SearchBar";
+import Link from "next/link";
 
 const Header = () => {
   const pathname = usePathname();
@@ -17,14 +18,16 @@ const Header = () => {
         <div className="block md:hidden">
           <MobileMenu />
         </div>
-        <Image
-          src={"/logo.png"}
-          alt={"logo"}
-          width={"250"}
-          height={"100"}
-          priority
-        />
-        <div className="w-1/2 md:block hidden">
+        <Link href="/">
+          <Image
+            src={"/logo.png"}
+            alt={"logo"}
+            width={"250"}
+            height={"100"}
+            priority
+          />
+        </Link>
+        <div className="w-1/2 xl:block hidden">
           <SearchBar />
         </div>
         <div className="flex gap-2 items-center justify-center">

@@ -53,14 +53,6 @@ const CarouselItemCard = ({
           </Link>
         )}
       </div>
-      {/* <div className="text-center">
-          <div className="text-base xl:text-lg -mb-1 font-semibold">
-            {price}
-          </div>
-          <span className="text-xs text-gray-400 underline xl:text-sm block">
-            {link}
-          </span>
-        </div> */}
     </div>
   </CardContent>
 );

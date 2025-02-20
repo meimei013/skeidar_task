@@ -1,4 +1,7 @@
+import { FilterComp } from "@/components/Filter";
+import { MobileMenu } from "@/components/Header/MobileMenu";
 import ProductCard from "@/components/ProductCard";
+import { SortComp } from "@/components/Sort";
 
 import { imageItems, products } from "@/utils/constant";
 import clsx from "clsx";
@@ -12,13 +15,10 @@ export default function ListingItem() {
       </div>
       <div className="flex px-4 py-2 justify-between items-center">
         <div className="flex gap-2 rounded bg-gray-200 px-4 py-2">
-          <SlidersHorizontal className="w-4 h-4 xl:w-6 xl:h-6" />
-          <span className="text-sm">Filter</span>
+          <FilterComp />
         </div>
         <div className="flex gap-2 rounded bg-gray-200 px-4 py-2">
-          <span className="text-sm">Sort</span>
-
-          <ArrowUpDown className="w-4 h-4 xl:w-6 xl:h-6" />
+          <SortComp />
         </div>
       </div>
       <section className="w-full grid place-items-center p-4 mx-auto ">
@@ -45,7 +45,7 @@ export default function ListingItem() {
           ))}
         </div>
       </section>
-      <div className="mt-6 -mb-8 bg-red-600 uppercase text-center text-white py-2 w-full ">
+      <div className="mt-6 -mb-4 xl:-mb-8 bg-red-600 uppercase text-center text-white py-2 w-full ">
         Sales end at 23:04:22
       </div>
     </main>

@@ -31,8 +31,8 @@ export const MobileMenu = () => {
                 src={"/logo.png"}
                 alt="skeidar-logo"
                 className="cursor-pointer"
-                width={110}
-                height={80}
+                width={250}
+                height={100}
                 priority
               />
             </Link>

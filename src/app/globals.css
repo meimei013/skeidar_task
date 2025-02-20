@@ -69,4 +69,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  .img-hover-magnify {
+    @apply transition-transform duration-300 ease-in-out transform hover:scale-110;
+  }
 }

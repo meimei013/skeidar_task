@@ -28,7 +28,7 @@ const CarouselSection = ({
     {title && <h2 className="text-lg font-semibold py-2">{title}</h2>}
     <Carousel
       opts={{ align: "start", loop: true }}
-      className="max-w-[300px] xl:max-w-[900px]"
+      className="max-w-[300px] md:max-w-[700px] xl:max-w-[900px]"
     >
       <CarouselContent className="sm:-ml-4">
         {sliderData.map((data, index) => (
