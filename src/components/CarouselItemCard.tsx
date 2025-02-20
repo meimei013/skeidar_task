@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Card, CardContent } from "./ui/card";
+import { CardContent } from "./ui/card";
 import Image from "next/image";
 
 const CarouselItemCard = ({
