@@ -7,13 +7,19 @@ import { MobileMenu } from "./MobileMenu";
 import SearchBar from "./SearchBar";
 import Link from "next/link";
 import Marquee from "../Marquee";
+import Cart from "../Cart";
 
 const Header = () => {
   const pathname = usePathname();
+  const dynamicBg = pathname === "/" ? "bg-red-500" : "bg-orange-400";
+  const orderNo = 3;
   return (
     <div className="w-full h-[100px] bg-white fixed z-10 border-b border-gray-300">
-      <Marquee message={"campaign message line with movement"} />
-      <div className="relative h-[60px] px-2 flex gap-4 items-center justify-between ">
+      <Marquee
+        message={"campaign message line with movement"}
+        bgColor={dynamicBg}
+      />
+      <div className="relative h-[60px] px-4 flex gap-4 items-center justify-between ">
         <div className="block md:hidden">
           <MobileMenu />
         </div>
@@ -30,13 +36,11 @@ const Header = () => {
         <div className="w-1/2 xl:block hidden">
           <SearchBar />
         </div>
-        <div className="flex mt-0 xl:mt-2 gap-2 items-center justify-center">
+        <div className="flex mt-0 xl:mt-2 gap-2 mr-2 items-center justify-center">
           <div className="relative">
             <UserRound className="w-6 h-6" />
           </div>
-          <div className="relative">
-            <ShoppingBasket className="w-6 h-6" />
-          </div>
+          <Cart orderNo={orderNo} />
         </div>
       </div>
       {pathname === "/" && (
