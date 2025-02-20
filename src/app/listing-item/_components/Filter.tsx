@@ -27,7 +27,7 @@ export const FilterComp = () => {
             <SheetDescription />
             <div className="text-left">Filter Data</div>
           </SheetHeader>
-          <nav className="md:hidden flex flex-col gap-3 pt-3 border-t ">
+          <nav className="flex flex-col gap-3 pt-3 border-t ">
             {["sofa", "bed", "dining"].map((item, i) => {
               return (
                 <SheetClose key={i} asChild>

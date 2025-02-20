@@ -5,7 +5,7 @@ import { Pointer } from "lucide-react";
 
 const PointersComp = () => {
   return (
-    <div className="w-full xl:space-x-12 space-x-2 flex items-center justify-center">
+    <div className="w-full xl:space-x-12 space-x-2 flex items-center justify-between xl:justify-center">
       {pointers.map((item) => (
         <div key={item.id} className="space-y-3">
           <div className="text-sm flex items-center border-2 justify-center bg-orange-50 border-gray-400 rounded w-[50px] h-[20px]">

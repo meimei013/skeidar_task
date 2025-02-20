@@ -25,7 +25,9 @@ const CarouselSection = ({
   imgClass?: string;
 }) => (
   <section className="flex flex-col items-center justify-center w-full">
-    {title && <h2 className="text-lg font-semibold py-2">{title}</h2>}
+    {title && (
+      <h2 className="text-lg text-gray-600 font-semibold py-2">{title}</h2>
+    )}
     <Carousel
       opts={{ align: "start", loop: true }}
       className="max-w-[300px] md:max-w-[700px] xl:max-w-[900px]"

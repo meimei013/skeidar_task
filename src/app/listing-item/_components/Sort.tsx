@@ -43,7 +43,7 @@ export const SortComp = () => {
             <SheetDescription />
             <div className="text-left">Sort Data</div>
           </SheetHeader>
-          <nav className="md:hidden flex flex-col gap-3 pt-3 border-t ">
+          <nav className="flex flex-col gap-3 pt-3 border-t ">
             {sortData.map(({ id, value, label }) => {
               return (
                 <SheetClose key={id} asChild>
