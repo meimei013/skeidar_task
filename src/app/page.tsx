@@ -1,4 +1,3 @@
-"use client";
 import CarouselSection from "@/components/CarouselSection";
 import NavMenu from "@/components/Header/NavMenu";
 import HeroBanner from "@/components/HeroBanner";
