@@ -6,7 +6,7 @@ import PointersComp from "./_components/PointersComp";
 
 const Footer = () => {
   return (
-    <div className="relative p-4 mt-4 xl:mt-8 bg-orange-50 border-t">
+    <div className="main-div-layout p-4 bg-orange-50 border-t">
       <PointersComp />
       <div className="text-sm w-full xl:w-max-[650px] xl:text-base mt-2 ml-2">
         <div>

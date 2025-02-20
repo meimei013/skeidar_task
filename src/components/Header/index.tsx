@@ -6,15 +6,14 @@ import { usePathname } from "next/navigation";
 import { MobileMenu } from "./MobileMenu";
 import SearchBar from "./SearchBar";
 import Link from "next/link";
+import Marquee from "./Marquee";
 
 const Header = () => {
   const pathname = usePathname();
   return (
-    <div className="w-full h-[80px] xl:h-[100px] bg-white fixed z-10 border-b border-gray-300">
-      <div className="bg-red-600 relative xl:text-base text-xs text-center font-thin tracking-wide text-white p-2 uppercase">
-        Campaign Message line with movement
-      </div>
-      <div className=" p-2 flex gap-4 items-center justify-between ">
+    <div className="w-full h-[100px] bg-white fixed z-10 border-b border-gray-300">
+      <Marquee />
+      <div className="relative h-[60px] px-2 flex gap-4 items-center justify-between ">
         <div className="block md:hidden">
           <MobileMenu />
         </div>
@@ -25,7 +24,7 @@ const Header = () => {
             width={"220"}
             height={"100"}
             priority
-            className="mt-0 xl:mt-2"
+            className="mt-0"
           />
         </Link>
         <div className="w-1/2 xl:block hidden">
@@ -41,7 +40,7 @@ const Header = () => {
         </div>
       </div>
       {pathname === "/" && (
-        <div className="w-full md:hidden block">
+        <div className="relative h-[40px] w-full md:hidden block">
           <SearchBar />
         </div>
       )}

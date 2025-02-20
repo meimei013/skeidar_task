@@ -7,7 +7,7 @@ const PaymentMode = () => {
     <div className="flex items-end justify-center gap-4">
       {modeOfPayments.map((payment) => (
         <div key={payment.id}>
-          <Image src={payment.img} width={75} height={75} alt={"alt"} />
+          <Image src={payment.img} width={50} height={50} alt={"alt"} />
         </div>
       ))}
     </div>

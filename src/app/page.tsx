@@ -15,7 +15,7 @@ import {
 import clsx from "clsx";
 export default function Page() {
   return (
-    <main className="pt-[120px] xl:pt-[100px]">
+    <main className="main-div-layout xl:pt-[100px]">
       <div className="w-full md:block hidden">
         <NavMenu />
       </div>

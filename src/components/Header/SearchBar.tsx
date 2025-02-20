@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div className="flex items-center w-full bg-gray-100 xl:bg-white border-b border-b-gray-300">
+    <div className="flex items-center w-full h-[40px] bg-gray-100 xl:bg-white border-b border-b-gray-300">
       <input
         type="search"
         id="default-search"

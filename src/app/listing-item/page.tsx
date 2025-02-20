@@ -6,7 +6,7 @@ import { SortComp } from "./_components/Sort";
 
 export default function ListingItem() {
   return (
-    <main className="xl:pt-[100px] pt-[80px]">
+    <main className="main-div-layout xl:pt-[100px] mb-[15px] xl:mb-[30px]">
       <div className="text-gray-400 py-4 xl:py-8 px-4">
         Home | All Products | <span className="text-gray-800">Sofa</span>
       </div>
