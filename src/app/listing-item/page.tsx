@@ -3,18 +3,19 @@ import clsx from "clsx";
 import ProductCard from "./_components/ProductCard";
 import { FilterComp } from "./_components/Filter";
 import { SortComp } from "./_components/Sort";
+import Marquee from "@/components/Marquee";
 
 export default function ListingItem() {
   return (
-    <main className="main-div-layout xl:pt-[100px] mb-[15px] xl:mb-[30px]">
+    <main className="main-div-layout xl:pt-[100px] xl:mb-[30px]">
       <div className="text-gray-400 py-4 xl:py-8 px-4">
         Home | All Products | <span className="text-gray-800">Sofa</span>
       </div>
       <div className="flex px-4 py-2 justify-between items-center">
-        <div className="flex gap-2 rounded bg-gray-200 px-4 py-2">
+        <div className="filter-sort-layout">
           <FilterComp />
         </div>
-        <div className="flex gap-2 rounded bg-gray-200 px-4 py-2">
+        <div className="filter-sort-layout">
           <SortComp />
         </div>
       </div>
@@ -42,9 +43,7 @@ export default function ListingItem() {
           ))}
         </div>
       </section>
-      <div className="mt-6 -mb-4 xl:-mb-8 bg-red-600 uppercase text-center text-white py-2 w-full ">
-        Sales end at 23:04:22
-      </div>
+      <Marquee message={"Sales end at 23:04:22"} />
     </main>
   );
 }

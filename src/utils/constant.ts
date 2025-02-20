@@ -312,7 +312,7 @@ export const products = [
   {
     id: "1",
     name: "Hejjen MOda",
-    type: "dinning",
+    type: "dining",
     price: "na 216",
     discounted: "na 166.50",
     sale: ["30%", "sale"],
@@ -327,7 +327,7 @@ export const products = [
   {
     id: "2",
     name: "Hejjen MOda",
-    type: "dinning",
+    type: "dining",
     price: "na 230",
     discounted: "na 200",
     sale: ["50%", "limited"],
@@ -342,10 +342,10 @@ export const products = [
   {
     id: "3",
     name: "Hejjen MOda",
-    type: "dinning",
+    type: "dining",
     price: "na 230",
     discounted: "na 200",
-    sale: ["sale"],
+    sale: ["sale", "50%", "limited"],
     status: "Flere storrelser",
     link: "click here",
     img: {

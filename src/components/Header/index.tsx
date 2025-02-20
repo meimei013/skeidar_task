@@ -6,13 +6,13 @@ import { usePathname } from "next/navigation";
 import { MobileMenu } from "./MobileMenu";
 import SearchBar from "./SearchBar";
 import Link from "next/link";
-import Marquee from "./Marquee";
+import Marquee from "../Marquee";
 
 const Header = () => {
   const pathname = usePathname();
   return (
     <div className="w-full h-[100px] bg-white fixed z-10 border-b border-gray-300">
-      <Marquee />
+      <Marquee message={"campaign message line with movement"} />
       <div className="relative h-[60px] px-2 flex gap-4 items-center justify-between ">
         <div className="block md:hidden">
           <MobileMenu />
