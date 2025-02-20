@@ -1,7 +1,7 @@
 export const navItems = [
   {
     id: "1",
-    label: "All producst",
+    label: "All products",
     link: "/listing-item",
   },
   {

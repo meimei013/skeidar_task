@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="main-div-layout p-4 bg-orange-50 border-t">
       <PointersComp />
-      <div className="text-sm w-full xl:w-max-[650px] text-gray-500 xl:text-base mt-2 ml-2">
+      <div className="text-sm w-full xl:w-max-[650px] text-gray-500 xl:text-base mt-2">
         <p>Aktuelt</p>
         <p>Om Skeidar</p>
         <p>Kundeservice</p>
